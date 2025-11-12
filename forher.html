@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>For Her</title>
+  <link rel="stylesheet" href="forherstyle.css">
+</head>
+<body>
+  <div class="wrap">
+    <div class="card">
+      <div class="left">
+        <h1>Hey — can I tell you something small?</h1>
+        <p class="lead">It’s not a poem, not a speech — just something I wanted to say clearly.</p>
+
+        <div class="message-box">
+          <div class="type" id="typed"></div>
+        </div>
+
+        <div class="cta">
+          <button class="btn-accept" id="acceptBtn">Yes, tell me 💖</button>
+          <button class="btn-later" id="laterBtn">Maybe later</button>
+        </div>
+      </div>
+
+      <div class="right">
+        <div class="heart">
+          <svg viewBox="0 0 32 29" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M23.6 2.6c-2.7 0-4.6 1.6-5.6 3-1-1.4-2.9-3-5.6-3C6 2.6 2 6.6 2 11.1c0 6.6 10 12 15 15.6 5-3.6 15-9 15-15.6C32 6.6 28 2.6 23.6 2.6z" fill="url(#g)"/>
+            <defs>
+              <linearGradient id="g" x1="0" x2="1" y1="0" y2="1">
+                <stop offset="0" stop-color="#ff9aa2"/>
+                <stop offset="1" stop-color="#ff4d6d"/>
+              </linearGradient>
+            </defs>
+          </svg>
+        </div>
+        <div class="note">A soft message, no pressure — just honesty.</div>
+      </div>
+
+      <footer>Made with care ❤️</footer>
+    </div>
+  </div>
+
+  <div class="modal" id="modal">
+    <div class="dialog">
+      <h3>So... what now?</h3>
+      <p id="modalText">If they say yes — celebrate. If not, it’s okay. Honesty matters most.</p>
+      <div class="actions">
+        <button id="modalClose">Close</button>
+        <button id="modalCelebrate" class="btn-accept">Celebrate 🎉</button>
+      </div>
+    </div>
+  </div>
+
+  <canvas id="confetti"></canvas>
+  <script src="forherfunc.js"></script>
+</body>
+</html>
